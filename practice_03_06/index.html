@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>07_Forms</title>
+</head>
+<body>
+    
+    <!--task1 
+        <form name="signinForm" onsubmit="formSubmit(event)" class="form-singin" action="" method="GET">
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+        </div>
+        <div class="form-row">
+            <p><b>Remember me: </b>
+            <input id="check" style="margin: 10px;" type="checkbox"> 
+            </p>
+            
+            
+        </div>
+        <div class="form-row">
+            <input style="margin: 10px;" value="Login" type="submit">
+            <input style="margin: 10px;" value="Clear" type="reset">
+        </div>
+    </form> -->
+    <div id="container">
+        <form action="" name="signinForm" onsubmit="formSubmit(event)" class="form-singin">
+           
+            <div class="form-row">
+                <label for="password">Firstname:</label>
+                <input id="password" name="password" type="text" >
+            </div>
+            <div class="form-row">
+                <label for="Lastname">Lastname:</label>
+                <input id="Lastname" name="Lastname" type="text" >
+            </div>
+            <div class="form-row">
+                <label for="Birthday">Birthday</label>
+                <input id="Birthday" name="Birthday" type="date" >
+            </div>
+            <div class="form-row" style="display: block;">
+                <label for="gender">Gender: Male</label>
+                <input id="genderMale" name="gender" type="radio">
+                <label for="gender">Female</label>
+                <input id="genderFemale" name="gender" type="radio">
+            </div>
+            <div class="form-row">
+                <label for="Birthday">Country</label>
+                <select style="width: 60%;">
+                    <option value="ua">Ukraine</option>
+                    <option value="eng" >England</option>
+                    <option value="gr">Germany</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="city">City</label>
+                <select style="width: 75%;">
+                    <option value="ua">Rivne</option>
+                    <option value="eng" >London</option>
+                    <option value="gr">Berlin</option>
+                </select>
+            </div>
+            <div class="form-row" style="width: 100%; display: flex;" >
+                Skills: 
+                HTML <input id="html" name="html" type="checkbox">
+                CSS <input id="css" name="css" type="checkbox">
+                JS <input id="js" name="js" type="checkbox">
+                PHP <input id="php" name="php" type="checkbox">
+                C++ <input id="cpp" name="cpp" type="checkbox">
+                JAVA <input id="java" name="java" type="checkbox">
+                C# <input id="csharp" name="csharp" type="checkbox">
+            </div>
+            <input type="button">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

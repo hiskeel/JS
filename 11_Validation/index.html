@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Реєстрація</h1>
+
+    <form class="form-signup" onsubmit="formSubmitHandler(event)">
+        <div class="form-row">
+            <input placeholder="Ім'я" id="firstName" name="lastName" type="text">
+        </div>
+        <div class="form-row">
+            <input placeholder="Прізвище" id="lastname" name="lastName" type="text">
+        </div>
+        <div class="form-row">
+            <label id="labelError"  style="color: red;font-size: 0.8em;">Error</label>
+            <input placeholder="Пошта" id="email" name="email" type="email">
+        </div>
+        <div class="form-row">
+            <label id="labelError"  style="color: red;font-size: 0.8em;">Error</label>
+            <label id="labelError"  style="color: red;font-size: 0.8em;">Error</label>
+            <input placeholder="Пароль" id="password" name="password" type="password">
+        </div>
+        <div class="form-row">
+            <input placeholder="Підтвердження паролю" id="confirmPassword" name="confirmPassword" type="ддддддддхдддддддpassword">
+        </div>
+        <label id="labelError" hidden style="color: red;font-size: 0.8em;">Error</label>
+        <div class="form-row">
+            <input type="submit" value="Зареєструватися">
+            <input type="reset" value="Очистити">
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

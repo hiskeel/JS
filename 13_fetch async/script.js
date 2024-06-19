@@ -1,0 +1,1 @@
+const apiNewsURL = 9

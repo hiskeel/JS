@@ -1,0 +1,32 @@
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+#search{
+    width: 40%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    border:1px solid black;
+}
+#searchForm{
+    border: 1px;
+}
+#typeSearchInput{
+    text-align: left;
+    width: 60%;
+    margin-left: 20px;
+}
+#titleSearchInput{
+    text-align: left;
+    width: 60%;
+    margin-left: 20px;
+}
+#titleSearchDiv{
+    padding: 15px;
+}
+#typeSearchDiv{
+    padding: 15px;
+}

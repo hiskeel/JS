@@ -1,0 +1,10 @@
+.form-signup {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-row {
+    margin-top: 10px;
+    display: grid;
+}

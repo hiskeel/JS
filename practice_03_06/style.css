@@ -1,0 +1,14 @@
+
+
+.form-row {
+    display: grid;
+    width: 45%;
+    margin: 10px;
+}
+ 
+.form-singin {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: auto;
+}

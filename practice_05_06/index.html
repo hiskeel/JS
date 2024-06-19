@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Реєстрація</h1>
+
+    <form class="form-signup" onsubmit="formSubmitHandler(event)">
+        
+        <div class="form-row">
+            <div style="display: flex; text-align:  left;">
+                <div style=" width: 50%; font-weight: bold;">
+                    <label id="labelEmail"  style="color: rgb(0, 0, 0);font-size: 0.8em; text-align: left;">Email:</label>
+                </div>
+                <div style=" width: 50%; text-align: right; ">
+                    <label id="labelEmailError"  hidden  style="color: red;font-size: 0.8em;">Error</label>
+                </div>
+            </div>
+            
+            <input placeholder="Пошта" id="email" name="email" type="text">
+        </div>
+        <div class="form-row">
+            <div style="display: flex; text-align:  left;">
+                <div style=" width: 50%; font-weight: bold;">
+                    <label id="labelPassword"  style="color: rgb(0, 0, 0);font-size: 0.8em; text-align: left;">Password:</label>
+                </div>
+                <div style=" width: 50%; text-align: right; ">
+                    <label id="labelPasswordError"   hidden style="color: red;font-size: 0.8em;">Error</label>
+                </div>
+            </div>
+           
+            <input placeholder="Пароль" id="password" name="password" type="password">
+        </div>
+        <div class="form-row">
+            <div style="display: flex; text-align:  left;">
+                <div style=" width: 50%; font-weight: bold;">
+                    <label id="labelPasswordRepeat"  style="color: rgb(0, 0, 0);font-size: 0.8em; text-align: left;">Repeat:</label>
+                </div>
+                <div style=" width: 50%; text-align: right;">
+                    <label id="labelPasswordRepeatError" hidden  style="color: red;font-size: 0.8em;">Repeat:</label>
+                </div>
+            </div>
+            <input placeholder="Підтвердження паролю" id="confirmPassword" name="confirmPassword" type="password">
+        </div>
+        <label id="labelError" hidden style="color: red;font-size: 0.8em;">Error</label>
+        <div class="form-row">
+            <input type="submit" value="SignUp">
+            
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
